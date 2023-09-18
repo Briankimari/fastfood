@@ -24,7 +24,7 @@ const foodData = [
   },
   {
     id: 2,
-    src: chipsmasala,
+    src: rice1,
    alt: "photo",
     title: "Chips Masala",
    time:'1hr ago',

@@ -1,5 +1,4 @@
 import chipskuku from '../../data/Chips-Chicken.jpg'
-import chipsmasala from '../../data/Chips-masala.jpg'
 import choma from '../../data/choma-2.jpeg'
 import hotdog from '../../data/hotdog.jpg'
 import chapo from '../../data/chapo.jpeg'
@@ -19,7 +18,7 @@ const ImageSlide = [
   },
   {
     id: 2,
-    src: chipsmasala,
+    src: mokimo,
    alt: "photo",
     title: "Chips-Masala",
     order:'90%',
