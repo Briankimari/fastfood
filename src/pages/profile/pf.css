@@ -1,0 +1,93 @@
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+
+}
+
+
+ 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10.8vh;
+    padding: 1% 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    transition: .3s;
+    
+    
+    
+
+}
+
+.header .sticky h2 {
+    color: white;
+}
+
+
+.body-1 {
+        
+    width: 100%;
+    margin: 0 auto;
+   
+     
+}
+
+
+.header.sticky {
+
+    color: white;
+    background: orange;
+    zoom: 75%;
+    transition: .4s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.part-1 {
+
+    height: 15vh;
+    
+    padding: 30px;
+
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-family: 'cursive';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.state h2 {
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+
+.state-2 span {
+    font-size: 1.3rem;
+    font-weight: 550;
+    font-family: 'cursive';
+}
+
+
+.header h3 {
+    color: white;
+   
+}
+
+
+
+.my-profile h2 {
+    font-size: 2.2rem;
+    font-family: 'cursive';
+
+}
