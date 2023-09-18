@@ -14,7 +14,7 @@ export const registerUser = async (userData) => {
   try {
     const response = await 
     axios.post(
-      'https://fastfood-api.com/register',
+      'https://fastfood-api-bz41.onrender.com/register',
       userData,
       // { withCredentials: true }
     );
@@ -35,7 +35,7 @@ export const registerUser = async (userData) => {
 export const loginUser = async (userData) => {
   try {
     const response = await axios.post(
-      'https://fastfood-api.com/login',
+      'https://fastfood-api-bz41.onrender.com/login',
       userData
     );
     if (response.statusText === "OK") {
@@ -57,7 +57,7 @@ export const loginUser = async (userData) => {
 // Get Login Status
 export const getLoginStatus = async () => {
   try {
-    const response = await axios.get('https://fastfood-api.com/loggedin');
+    const response = await axios.get('https://fastfood-api-bz41.onrender.com/loggedin');
     return response.data;
   } catch (error) {
     const message =
@@ -70,7 +70,7 @@ export const getLoginStatus = async () => {
 // // Get User Profile
 export const getUser = async () => {
    try {
-    const response = await axios.get('https://fastfood-api.com/getuser');
+    const response = await axios.get('https://fastfood-api-bz41.onrender.com/getuser');
     return response.data;
    } catch (error) {
      const message =
@@ -84,7 +84,7 @@ export const getUser = async () => {
 export const updateUser = async (formData) => {
   try {
     const response = await axios.patch(
-      'https://fastfood-api.com/updateuser',
+      'https://fastfood-api-bz41.onrender.com/updateuser',
       formData
     );
     return response.data;

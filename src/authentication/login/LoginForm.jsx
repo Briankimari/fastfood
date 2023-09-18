@@ -36,7 +36,7 @@ const LoginForm = () => {
   const login = async (e)=>{
     e.preventDefault();
     try {
-      await axios.post("https://fastfood-api.com/login", {
+      await axios.post("https://fastfood-api-bz41.onrender.com/login", {
         email,password
       })
     } catch (error) {

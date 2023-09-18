@@ -60,7 +60,7 @@ export default function TakeOrder() {
   const saveOrder = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://fastfood-api.com/purchase",{
+      await axios.post("https://fastfood-api-bz41.onrender.com/purchase",{
         idNumber,phoneNumber,country,postalAddress,agree
       });
       setIsLoading(true)

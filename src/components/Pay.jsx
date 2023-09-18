@@ -9,7 +9,7 @@ const Pay = () => {
      const payHandler=(event)=>{
         event.preventDefault();
         
-        Axios.post("https://fastfood-api.com/token",{
+        Axios.post("https://fastfood-api-bz41.onrender.com/token",{
             amount,
             phone,
         }).then((res)=> {
