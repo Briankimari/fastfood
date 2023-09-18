@@ -24,7 +24,7 @@ const Navbar = () => {
 
 // GET IMAGES
 const getImages= async (e) => {
-  const response = await axios.get("fastfood-api/insert");
+  const response = await axios.get("https://fastfood-api.com/insert");
   setPostImage(response.data)
 }
  

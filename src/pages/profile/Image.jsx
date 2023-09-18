@@ -8,7 +8,7 @@ const Image = () => {
     //  create img
  const insertPicture = async (newImage) => {
  try{
-  await axios.post("fastfood-api/insert",newImage)
+  await axios.post("https://fastfood-api.com/insert",newImage)
   toast.success("image uploaded")
  } catch(error) {
   console.log(error);

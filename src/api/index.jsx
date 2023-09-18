@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url= "fastfood-api"; 
+const url= "https://fastfood-api.com"; 
 
 
 export const fetchPosts =() => axios.get(url);

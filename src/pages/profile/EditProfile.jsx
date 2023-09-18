@@ -32,7 +32,7 @@ const EditProfile = () => {
 //  create img
  const insertPicture = async (newImage) => {
  try{
-  await axios.post("fastfood-api/insert",newImage)
+  await axios.post("https://fastfood-api.com/insert",newImage)
   toast.success("image uploaded")
  } catch(error) {
   console.log(error);
@@ -43,7 +43,7 @@ const EditProfile = () => {
 
 // GET IMAGES
 const getImages= async (e) => {
-  const response = await axios.get("fastfood-api/insert");
+  const response = await axios.get("https://fastfood-api.com/insert");
   setPostImage(response.data)
 }
 
@@ -65,7 +65,7 @@ const handleFileUpload =async (e) => {
   
 
 const getProfileById= async () => {
-    const response = await axios.get('fastfood-api/edit-profile/65032c4b35d2b8bbcaa7c735');
+    const response = await axios.get('https://fastfood-api.com/edit-profile/65032c4b35d2b8bbcaa7c735');
     setuserName( response.data.userName);
     setCurrentLocation( response.data.currentLocation);
     setAboutme( response.data.aboutMe);
@@ -77,7 +77,7 @@ const updateProfile = async (e) => {
     e.preventDefault();
 
     try {
-        await axios.patch('fastfood-api/editprofile/65032c4b35d2b8bbcaa7c735', {
+        await axios.patch('https://fastfood-api.com/editprofile/65032c4b35d2b8bbcaa7c735', {
              userName,currentLocation,aboutMe
         });
         toast.success("Profile Updated Successfuly")
@@ -93,7 +93,7 @@ const updateProfile = async (e) => {
 const removeProfile = async (id)=> {
   
   try {
-    await axios.delete(`fastfood-api/insert-delete/${id}`);
+    await axios.delete(`https://fastfood-api.com/insert-delete/${id}`);
     toast.success("Photo removed successfuly")
     
   } catch (error) {
