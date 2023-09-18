@@ -3,6 +3,7 @@ import { Badge, Box,  Dialog, DialogActions, DialogContent, DialogTitle, IconBut
 import {styled  } from '@mui/material/styles'
 import PropTypes from 'prop-types'
 import { NotificationsOutlined} from '@mui/icons-material'
+import axios from 'axios';
 
 const DialogBox= styled(Dialog)(({theme})=> ({
   '&.MuiDialogContent-root': {
@@ -57,7 +58,7 @@ export default function Notification() {
     setOpen(false)
   }
 
-
+ 
   // get profile
   const getProfile=async (e) => {
     

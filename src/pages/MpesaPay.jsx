@@ -26,7 +26,7 @@ const MpesaPay = () => {
              
         }).catch((error)=>{
             console.log(error);
-            toast.error("invalid number or id number")
+            toast.error("invalid phone number or id number")
         })
      };
 
