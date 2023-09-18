@@ -1,14 +1,11 @@
 import React from 'react'
 import chipskuku from '../../data/Chips-Chicken.jpg'
-import chipsmasala from '../../data/Chips-masala.jpg'
 import choma from '../../data/choma-2.jpeg'
 import hotdog from '../../data/hotdog.jpg'
 import chapo from '../../data/chapo.jpeg'
-import samo from '../../data/samo.jpeg'
-import piza from '../../data/piza.jpg'
 import wines from '../../data/wines.jpg'
 import fish from '../../data/fish-2.jpeg'
-import { BsCartCheck, BsCheck, BsPlus, BsStar } from 'react-icons/bs'
+import { BsCartCheck, BsCheck } from 'react-icons/bs'
 import Order from '../../pages/Order'
 import TakeOrder from '../../pages/TakeOrder'
 
@@ -23,7 +20,7 @@ const foodData = [
   },
   {
     id: 2,
-    src: chipsmasala,
+    src: hotdog,
    alt: "photo",
     title: "Chips Masala",
    time:'1hr ago',
