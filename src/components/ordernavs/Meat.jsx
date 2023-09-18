@@ -1,6 +1,5 @@
 import React from 'react'
 import chipskuku from '../../data/Chips-Chicken.jpg'
-import chipsmasala from '../../data/Chips-masala.jpg'
 import choma from '../../data/choma-2.jpeg'
 import chapo from '../../data/chapo.jpeg'
 import fish from '../../data/fish-2.jpeg'
@@ -19,7 +18,7 @@ const foodData = [
   },
   {
     id: 2,
-    src: chipsmasala,
+    src: chapo,
    alt: "photo",
     title: "Chips Masala",
    time:'1hr ago',

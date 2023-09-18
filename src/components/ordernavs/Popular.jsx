@@ -1,6 +1,5 @@
 import React from 'react'
 import chipskuku from '../../data/Chips-Chicken.jpg'
-import chipsmasala from '../../data/Chips-masala.jpg'
 import choma from '../../data/choma-2.jpeg'
 import eggs2 from '../../data/flied-eggs.jpeg'
 import chapo from '../../data/chapo.jpeg'
