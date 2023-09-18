@@ -36,7 +36,7 @@ const LoginForm = () => {
   const login = async (e)=>{
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/login", {
+      await axios.post("fastfood-api/login", {
         email,password
       })
     } catch (error) {

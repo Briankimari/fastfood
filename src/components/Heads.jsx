@@ -21,7 +21,7 @@ const Heads = () => {
 // GET IMAGES
 const getImages= async (e) => {
   
-  const response = await axios.get("http://localhost:5000/insert");
+  const response = await axios.get("fastfood-api/insert");
   setPostImage(response.data)
 }
   return (

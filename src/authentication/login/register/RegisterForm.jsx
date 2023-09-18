@@ -41,7 +41,7 @@ const [isLoading,setIsLoading] = useState(false);
    const register = async (e) => {
     e.preventDefault();
     try {
-        await axios.post("http://localhost:5000/register",{
+        await axios.post("fastfood-api/register",{
             firstName,lastName,email,password
         });
         setIsLoading(true)        

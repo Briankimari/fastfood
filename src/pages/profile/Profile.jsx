@@ -35,7 +35,7 @@ const Profile = () => {
 //  create img
  const insertPicture = async (newImage) => {
  try{
-  await axios.post("http://localhost:5000/insert",newImage)
+  await axios.post("fastfood-api/insert",newImage)
   setIsLoading(true)
   toast.success("image uploaded")
   setIsLoading(false)
@@ -57,13 +57,13 @@ const saveProfile=async (e) => {
 
 // get profile
 const getProfile=async (e) => {
-  const response = await axios.get("http://localhost:5000/edited-profile");
+  const response = await axios.get("fastfood-api/edited-profile");
   setProfiles(response.data)
 };
 
 // GET IMAGES
 const getImages= async (e) => {
-  const response = await axios.get("http://localhost:5000/insert");
+  const response = await axios.get("fastfood-api/insert");
   setPostImage(response.data)
 }
 
@@ -75,7 +75,7 @@ const handleFileUpload =async (e) => {
  
 
 const getProfileById= async () => {
-    const response = await axios.get('http://localhost:5000/edit-profile/6504aa313ab5ff3e0fc809ab');
+    const response = await axios.get('fastfood-api/edit-profile/6504aa313ab5ff3e0fc809ab');
     setuserName( response.data.userName);
     setCurrentLocation( response.data.currentLocation);
     setAboutme( response.data.aboutMe);
@@ -87,7 +87,7 @@ const updateProfile = async (e) => {
     
 
     try {
-        await axios.patch('http://localhost:5000/editprofile/6504aa313ab5ff3e0fc809ab', {
+        await axios.patch('fastfood-api/editprofile/6504aa313ab5ff3e0fc809ab', {
              userName,currentLocation,aboutMe
         });
         setIsLoading(true)
@@ -104,7 +104,7 @@ const updateProfile = async (e) => {
 const removeProfile = async (id)=> {
   
   try {
-    await axios.delete(`http://localhost:5000/insert-delete/${id}`);
+    await axios.delete(`fastfood-api/insert-delete/${id}`);
     toast.success("Photo removed successfuly")
    
   } catch (error) {
