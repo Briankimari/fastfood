@@ -1,20 +1,20 @@
 import React from 'react'
 import './pf.css'
 import { Avatar, Box,  IconButton, TextField, TextareaAutosize, Tooltip, useMediaQuery } from '@mui/material';
-import { AiOutlineArrowLeft, AiOutlineEdit, AiOutlineProfile} from 'react-icons/ai';
-import { Link,  useNavigate } from 'react-router-dom';
+import { AiOutlineArrowLeft, AiOutlineProfile} from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import DeleteForevorIcon from "@mui/icons-material/DeleteForever"
 import { useState } from 'react';
 import Loader from '../../loader/Loader';
-import TextLoader from '../../loader/TextLoader';
+
 
 
 
 const Profile = () => {
-  const navigate = useNavigate();
+ 
  const isNonMobile = useMediaQuery("(min-width:600px)");
  const [userName, setuserName] = useState( '');
  const [profile, setProfiles] = useState( []);
@@ -23,7 +23,7 @@ const Profile = () => {
  const [profileImg,setProfileImg] = useState({ myImage:''});
   const [postImage,setPostImage] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [isLoad, setIsLoad] = useState(true)
+ 
 
 
 

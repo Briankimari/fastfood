@@ -1,5 +1,5 @@
- import React, { useState } from 'react';
-import { Badge, Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, IconButton,  Typography,  } from '@mui/material'
+ import React, { useEffect, useState } from 'react';
+import { Badge, Box,  Dialog, DialogActions, DialogContent, DialogTitle, IconButton,  Typography,  } from '@mui/material'
 import {styled  } from '@mui/material/styles'
 import PropTypes from 'prop-types'
 import { NotificationsOutlined} from '@mui/icons-material'
@@ -40,6 +40,14 @@ DialogTitleModal.proptoTypes={
 
 export default function Notification() {
   const [open,setOpen] =useState(false);
+     const [profile, setProfiles] = useState( []);
+
+     
+ useEffect(()=> { 
+      
+        getProfile();
+        
+    },[]);
 
   const handleClickOpen=()=> {
     setOpen(true)
@@ -48,6 +56,15 @@ export default function Notification() {
   const handleClose=()=> {
     setOpen(false)
   }
+
+
+  // get profile
+  const getProfile=async (e) => {
+    
+  const response = await axios.get("https://fastfood-api-bz41.onrender.com/edited-profile");
+  setProfiles(response.data)
+};
+
   return (
     <div>
          <Box>
@@ -71,7 +88,11 @@ export default function Notification() {
       </DialogTitleModal>
       <DialogContent dividers>
      <Typography gutterBottom sx={{display:'flex',alignContent:'center', justifyContent:'space-between'}}>
-      <h1 className=' font-bold text-orange-300'>Brian Bandi</h1>
+      <h1 className=' font-bold text-orange-300'>
+        {profile.map((myname)=>(
+          <p>{myname.userName}</p>
+        ))}
+      </h1>
        <p className='text-sm text-gray-300'>2mins ago</p>
      </Typography>
      
