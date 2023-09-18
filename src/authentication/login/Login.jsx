@@ -23,7 +23,7 @@ const Login = () => {
       backgroundColor={theme.palette.background.alt}
       className="shadow-2xl">
       <Typography fontWeight="500" variant='h5' sx={{mb: "1.5rem"}}>
-        <p className='text-xl text-gray-600 font-semibold flex justify-center'>welcome, Brian Bandi</p>
+        <p className='text-xl text-gray-600 font-semibold flex justify-center'>welcome to <span className="text-orange-600"> FastFood</span></p>
       </Typography>
       <LoginForm/>
       </Box>
