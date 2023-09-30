@@ -81,10 +81,11 @@ const getImages= async (e) => {
           <div className='dropdown-content  w-96  p-8 bg-white   shadow-2xl '>
            <div className='flex gap-20'>
                <p className='block'>
-               <a href='/order'>chips</a>
-               <a href='/order'>Chicken</a>
-               <a href='/order'>Pilau miji</a>
-                  <a href='/order'>Piza</a>
+               
+               <Link to='/order'>chips</Link>
+               <Link to='/oredr'>chicken</Link>
+               <Link to='/order'>Pilau miji</Link>
+                  <Link to='/order'>Piza</Link>
            </p>
            </div>
            
@@ -102,10 +103,10 @@ const getImages= async (e) => {
           <div className='dropdown-content  w-96  p-8 bg-white   shadow-2xl '>
            <div className='flex gap-20'>
                <p className='block'>
-               <a href='/available'>Chips Chicken</a>
-               <a href='/available'>Chips Masala</a>
-               <a href='/available'>Chapati</a>
-                  <a href='/available'>Smokies</a>
+               <Link to='/available'>Chips Chicken</Link>
+               <Link to='/available'>Chips Masala</Link>
+               <Link to='/available'>Chapati</Link>
+                  <Link href='/available'>Smokies</Link>
            </p>
            </div>
            
@@ -122,10 +123,10 @@ const getImages= async (e) => {
             <div className='dropdown-content  w-96  p-8 bg-white   shadow-2xl '>
            <div className='flex gap-20'>
                <p className='block'>
-               <a href='/new'>Mokimo</a>
-               <a href='/new'>Githeri</a>
-               <a href='/new'>Arrow Roots</a>
-                  <a href='/new'>Casava</a>
+               <Link to='/new'>Mokimo</Link>
+               <Link to='/new'>Githeri</Link>
+               <Link to='/new'>Arrow Roots</Link>
+                  <Link to='/new'>Casava</Link>
            </p>
            </div>
            
@@ -143,10 +144,10 @@ const getImages= async (e) => {
             <div className='dropdown-content  w-96  p-8 bg-white   shadow-2xl '>
            <div className='flex gap-20'>
                <p className='block'>
-               <a href='/drinks'>Black Coffee</a>
-               <a href='/drinks'>Fresh Milk</a>
-               <a href='/drinks'>Coffee</a>
-                  <a href='/drinks'>Porrige</a>
+               <Link to='/drinks'>Black Coffee</Link>
+               <Link href='/drinks'>Fresh Milk</Link>
+               <Link to='/drinks'>Coffee</Link>
+                  <Link to='/drinks'>Porrige</Link>
            </p>
            </div>
            
@@ -165,10 +166,10 @@ const getImages= async (e) => {
          <div className='dropdown-content  w-96  p-8 bg-white   shadow-2xl '>
            <div className='flex gap-20'>
                <p className='block'>
-               <a href='/meats'>choma</a>
-               <a href='/meats'>pork</a>
-               <a href='/meats'>chicken</a>
-                  <a href='/meats'>beef</a>
+               <Link to='/meats'>choma</Link>
+               <Link to='/meats'>pork</Link>
+               <Link to='/meats'>chicken</Link>
+                  <Link to='/meats'>beef</Link>
            </p>
            </div>
            

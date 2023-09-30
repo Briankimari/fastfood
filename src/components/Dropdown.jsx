@@ -2,6 +2,7 @@ import { Collapse, List, ListItem, ListItemButton, ListItemText } from '@mui/mat
 import React, { useState } from 'react'
 import ExpandMore from '@mui/icons-material/ExpandMore'
 import ExpandLess from '@mui/icons-material/ExpandLess'
+import { Link } from 'react-router-dom';
 
 const Dropdown = () => {
     const [open,setOpen] =useState(false);
@@ -19,36 +20,36 @@ const Dropdown = () => {
              </ListItem>
             <Collapse in={open} timeout='auto' unmountOnExit>
                 <List component='div' className='mui-list' disablePadding >
-                    <a href='/order'>
+                    <Link to='/order'>
                 <ListItemButton className='hidden-content'>
                <ListItemText className='hover:text-orange-500' primary="Popular meals" />
                  
                 </ListItemButton>
-                </a>
+                </Link>
 
-                 <a href='/available'>
+                 <Link to='/available'>
                 <ListItemButton>
                 <ListItemText className='hover:text-orange-500' primary="Available meals"/>  
                  </ListItemButton> 
-                </a>
+                </Link>
 
-                  <a href='/new'>
+                  <Link to='/new'>
                  <ListItemButton>
                  <ListItemText className='hover:text-orange-500' primary="New meals"/>
                   </ListItemButton> 
-                 </a>
+                 </Link>
 
-                  <a href='/drinks'>
+                  <Link to='/drinks'>
                   <ListItemButton>
                   <ListItemText className='hover:text-orange-500' primary="Drinks"/>   
                   </ListItemButton> 
-                 </a>
+                 </Link>
                 
-                   <a href='/meats'>
+                   <Link to='/meats'>
                  <ListItemButton>
                    <ListItemText className='hover:text-orange-500' primary="Meats"/>
                  </ListItemButton> 
-                </a>
+                </Link>
                
                 </List>            
             </Collapse>

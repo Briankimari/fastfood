@@ -1,7 +1,6 @@
-import { Avatar, Badge, Box, IconButton } from '@mui/material'
+import { Avatar, Badge,  IconButton } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import Notification from '../pages/Notification'
-import img from '../data/brayo6.png'
 import Menu from './Menu'
 import { Link } from 'react-router-dom'
 import axios from 'axios';
