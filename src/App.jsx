@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import {  Route, Routes } from 'react-router-dom';
 import Login from './authentication/login/Login';
 import RegisterForm from './authentication/login/register/Register';
 import Pay from './components/Pay';
@@ -26,7 +26,7 @@ const App=()=> {
   return(
     <div >
       <ToastContainer/>
-      <BrowserRouter>
+      
       <Routes>
       <Route path='/' element={<Login/>} />
       <Route path='/register' element={<RegisterForm/>} />
@@ -42,7 +42,7 @@ const App=()=> {
       <Route path='/meats' element={<Meat/>} />
       <Route path='/editProfile' element={<EditProfile/> }/>
       </Routes>
-      </BrowserRouter>
+    
       
     </div>
   );

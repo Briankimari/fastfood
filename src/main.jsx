@@ -5,7 +5,6 @@ import './index.css'
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware, compose} from 'redux'
 import thunk from 'redux-thunk';
-import { configureStore } from '@reduxjs/toolkit';
 import { HashRouter } from 'react-router-dom';
 import reducers from "./reducers/Auth.jsx"
 
@@ -14,9 +13,8 @@ const store= createStore(reducers, compose(applyMiddleware(thunk)))
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={store}>
-  
-       <App/>
-  
-
+  <HashRouter>
+      <App/>
+  </HashRouter>
 </Provider>
 )
