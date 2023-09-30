@@ -83,7 +83,7 @@ const getImages= async (e) => {
                <p className='block'>
                
                <Link to='/order'>chips</Link>
-               <Link to='/oredr'>chicken</Link>
+               <Link to='/oreder'>chicken</Link>
                <Link to='/order'>Pilau miji</Link>
                   <Link to='/order'>Piza</Link>
            </p>
